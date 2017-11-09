@@ -1,29 +1,23 @@
 [[vis-spy]]
-== Visualization Spy
+== 可视化视图透视
 
-To display the raw data behind the visualization, click the image:images/spy-open-button.png[] button in the bottom left corner of the container. The visualization spy panel will open. Use the select input to view detailed information about the raw data.
+要显示视图背后的原始数据，点击容器左下角的 image:images/spy-open-button.png[] 按钮。视图透视面板就会打开。使用选择输入来查看原始数据的详细信息。
 
 image:images/spy-panel.png[]
 
-.Table
-A representation of the underlying data, presented as a paginated data grid. You can sort the items
-in the table by clicking on the table headers at the top of each column.
+.表格
+源数据的一种表示方式，呈现为一个分页的数据表格。通过点击每列顶部的表头，可以对数据条目排序。
 
-.Request
-The raw request used to query the server, presented in JSON format.
+.请求
+查询服务器的原始请求，格式为JSON。
 
-.Response
-The raw response from the server, presented in JSON format.
+.响应
+服务器的原始响应，格式为JSON。
 
-.Statistics
-A summary of the statistics related to the request and the response, presented as a data grid. The data
-grid includes the query duration, the request duration, the total number of records found on the server, and the
-index pattern used to make the query.
+.统计
+统计概要与请求和响应有关，呈现为一个数据表格。该表格包括了查询周期、请求周期、服务器发现的记录总数，以及用于构造查询的索引模式。
 
-.Debug
-The visualization saved state presented in JSON format.
+.调试
+视图保存JSON格式的状态。
 
-To export the raw data behind the visualization as a comma-separated-values (CSV) file, click on either the
-*Raw* or *Formatted* links at the bottom of any of the detailed information tabs. A raw export contains the data as it
-is stored in Elasticsearch. A formatted export contains the results of any applicable Kibana
-<<managing-fields,field formatters>>.
+想要把视图背后的原始数据导出为逗号分隔的CSV文件，点击任意详细信息标签底部的 *Raw* 或 *Formatted* 链接即可。原始导出的就是存储在Elasticsearch的数据。格式化到处则包含任意 Kibana 的 <<managing-fields,field formatters>> 。
