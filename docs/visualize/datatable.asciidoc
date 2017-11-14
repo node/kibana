@@ -21,7 +21,7 @@ include::y-axis-aggs.asciidoc[]
 
 *Filters*:: 可以为数据指定一系列 {es-ref}search-aggregations-bucket-filters-aggregation.html[_filters_] 。支持通过一个查询串或者JSON格式来指定一个过滤器，就像在Discover搜索框中一样。点击 *Add Filter* 来增加另一个过滤器。点击 image:images/labelbutton.png[] *label* 按钮打开标签字段，输入一个可显示在视图中的名称。
 
-*Significant Terms*:: 显示实验 {es-ref}search-aggregations-bucket-significantterms-aggregation.html[_significant terms_] 聚合的结果。 *Size* 参数的值定义该聚合返回的实体数量。
+*Significant Terms*:: 显示试验 {es-ref}search-aggregations-bucket-significantterms-aggregation.html[_significant terms_] 聚合的结果。 *Size* 参数的值定义该聚合返回的实体数量。
 
 *Geohash*:: {es-ref}search-aggregations-bucket-geohashgrid-aggregation.html[_geohash_] 聚合根据geohash坐标来显示点。
 
