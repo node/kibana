@@ -7,9 +7,7 @@ include::y-axis-aggs.asciidoc[]
 
 每个桶类型支持以下聚合：
 
-*Date Histogram*:: 一个 {es-ref}search-aggregations-bucket-datehistogram-aggregation.html[_date histogram_] 从一个数值型字段构建，并按日期组织。可以为间隔指定一个按秒、分钟、小时、天、周、月或年的时间段。
-也可以指定一个自定义的时间区间，只需选择 *Custom* 作为间隔，并在文本字段中指定一个数字和一个时间单位即可。对于自定义间隔时间单位，*s* 表示秒， *m* 表示分钟，*h* 表示小时， *d* 表示天， *w* 表示周， *y* 表示年。
-不同单位支持不同的精度级别，最低为一秒。
+*Date Histogram*:: 一个 {es-ref}search-aggregations-bucket-datehistogram-aggregation.html[_date histogram_] 从一个数值型字段构建，并按日期组织。可以为间隔指定一个按秒、分钟、小时、天、周、月或年的时间段。也可以指定一个自定义的时间区间，只需选择 *Custom* 作为间隔，并在文本字段中指定一个数字和一个时间单位即可。对于自定义间隔时间单位，*s* 表示秒， *m* 表示分钟，*h* 表示小时， *d* 表示天， *w* 表示周， *y* 表示年。不同单位支持不同的精度级别，最低为一秒。
 
 *Histogram*:: 一个标准的 {es-ref}search-aggregations-bucket-histogram-aggregation.html[_histogram_] 从一个数值型字段构建，并为该字段指定一个整数类型的间隔，选择 *Show empty buckets* 复选框可在直方图中包括空的间隔。
 
@@ -21,8 +19,7 @@ include::y-axis-aggs.asciidoc[]
 
 *Terms*:: {es-ref}search-aggregations-bucket-terms-aggregation.html[_terms_] 聚合支持指定一个给定字段的头部或尾部 _n_ 个元素来显示，并通过数量或自定义指标排序。
 
-*Filters*:: 可以为数据指定一系列 {es-ref}search-aggregations-bucket-filters-aggregation.html[_filters_] 。支持通过一个查询串或者JSON格式来指定一个过滤器，就像在Discover搜索框中一样。点击 *Add Filter* 来增加另一个过滤器。
-点击 image:images/labelbutton.png[] *label* 按钮打开标签字段，输入一个可显示在视图中的名称。
+*Filters*:: 可以为数据指定一系列 {es-ref}search-aggregations-bucket-filters-aggregation.html[_filters_] 。支持通过一个查询串或者JSON格式来指定一个过滤器，就像在Discover搜索框中一样。点击 *Add Filter* 来增加另一个过滤器。点击 image:images/labelbutton.png[] *label* 按钮打开标签字段，输入一个可显示在视图中的名称。
 
 *Significant Terms*:: 显示实验 {es-ref}search-aggregations-bucket-significantterms-aggregation.html[_significant terms_] 聚合的结果。 *Size* 参数的值定义该聚合返回的实体数量。
 
