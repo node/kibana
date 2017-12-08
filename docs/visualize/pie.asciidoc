@@ -27,11 +27,11 @@ _桶_ 聚合用于决定从数据集抽取何种信息。
 
 *IPv4 Range*:: {es-ref}search-aggregations-bucket-iprange-aggregation.html[_IPv4 range_] 聚合支持指定IPV4地址范围。点击 *Add Range* 增加一组范围端点，点击红色的  *(/)* 符号移除范围。
 
-*Terms*:: {es-ref}search-aggregations-bucket-terms-aggregation.html[_terms_] 聚合支持指定一个给定字段的头部或尾部 _n_ 个元素来显示，并通过数量或自定义指标排序。
+*Terms*:: {es-ref}search-aggregations-bucket-terms-aggregation.html[_terms_] 聚合支持指定要显示的给定字段的头部或尾部 _n_ 个元素，并按数量或自定义指标进行排序。
 
 *Filters*:: 可以为数据指定一系列 {es-ref}search-aggregations-bucket-filters-aggregation.html[_filters_] 。支持通过一个查询串或者JSON格式来指定一个过滤器，就像在Discover搜索框中一样。点击 *Add Filter* 来增加另一个过滤器。点击 image:images/labelbutton.png[] *label* 按钮打开标签字段，输入一个可显示在视图中的名称。
 
-*Significant Terms*:: 显示试验 {es-ref}search-aggregations-bucket-significantterms-aggregation.html[_significant terms_] 聚合的结果。*Size* 参数的值由该聚合返回的实体数量来确定。
+*Significant Terms*:: 显示试验 {es-ref}search-aggregations-bucket-significantterms-aggregation.html[_significant terms_] 聚合的结果。*Size* 参数的值定义了该聚合返回的实体数量。
 
 一旦指定了一个bucket类型的聚合，就可以定义子bucket来优化视图。点击 *+ Add sub-buckets* 来定义一个子bucket，然后选择 *Split Rows*  或 *Split Table* ，再从类型列表中选择一种聚合。
 
